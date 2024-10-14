@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-25 09:12:39 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMjU7IjA4OjU1OjIwICI7MzA5MA=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMjU7IjA5OjEyOjM5ICI7NTszMjA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Programma che somma due interi"/>
+            <declare name="primoaddendo" type="Integer" array="False" size=""/>
+            <declare name="secondoaddendo" type="Integer" array="False" size=""/>
+            <declare name="risultatosomma" type="Integer" array="False" size=""/>
+            <assign variable="primoaddendo" expression="5"/>
+            <assign variable="secondoaddendo" expression="10"/>
+            <assign variable="risultatosomma" expression="primoaddendo + secondoaddendo"/>
+            <output expression="&quot;Il risultato della somma &#232;: &quot; &amp; risultatosomma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

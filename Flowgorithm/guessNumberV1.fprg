@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-25 11:03:53 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMjU7IjEwOjQwOjQxICI7MzA4MA=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMjU7IjExOjAzOjUzICI7NDszMTk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Indovina il numero magico"/>
+            <declare name="magicnumber" type="Integer" array="False" size=""/>
+            <declare name="numuser" type="Integer" array="False" size=""/>
+            <declare name="sentinella" type="Integer" array="False" size=""/>
+            <declare name="distanza" type="Integer" array="False" size=""/>
+            <assign variable="distanza" expression="0"/>
+            <assign variable="sentinella" expression="10"/>
+            <assign variable="magicnumber" expression="20"/>
+            <output expression="&quot;Indovina il numero vincente: &quot;" newline="True"/>
+            <input variable="numuser"/>
+            <if expression="magicnumber == numuser">
+                <then>
+                    <output expression="&quot;Bravo hai vinto!!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Hai perso&quot;" newline="True"/>
+                    <if expression="magicnumber &gt; numuser">
+                        <then>
+                            <assign variable="distanza" expression="magicnumber - numuser"/>
+                        </then>
+                        <else>
+                            <assign variable="distanza" expression="numuser - magicnumber"/>
+                        </else>
+                    </if>
+                    <if expression="distanza &gt;= sentinella">
+                        <then>
+                            <output expression="&quot;Mi dispiace ma il tuo numero &#232; molto maggiore del numero magico&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Peccato hai quasi indovinato il numero magico!!!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

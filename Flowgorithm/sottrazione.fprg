@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-25 09:21:27 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMjU7IjA5OjEzOjEzICI7MzA4Nw=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMjU7IjA5OjIxOjI3ICI7MjszMjAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Il programma calcola la differenza tra due numeri interi"/>
+            <declare name="minuendo" type="Integer" array="False" size=""/>
+            <declare name="sottraendo" type="Integer" array="False" size=""/>
+            <declare name="risultatosottrazione" type="Integer" array="False" size=""/>
+            <assign variable="minuendo" expression="10"/>
+            <assign variable="sottraendo" expression="5"/>
+            <assign variable="risultatosottrazione" expression="minuendo - sottraendo"/>
+            <output expression="&quot;La differenza tra i due numeri &#232;: &quot; &amp; risultatosottrazione" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-30 10:38:59 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMzA7IjA5OjA5OjIxICI7MzA4Nw=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMzA7IjEwOjM4OjU5ICI7MTA7MzI0OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Indovina la parola magica"/>
+            <declare name="magicword" type="String" array="False" size=""/>
+            <assign variable="magicword" expression="&quot;hello&quot;"/>
+            <declare name="tryword" type="String" array="False" size=""/>
+            <assign variable="tryword" expression="&quot;&quot;"/>
+            <declare name="numeroTentativi" type="Integer" array="False" size=""/>
+            <assign variable="numeroTentativi" expression="0"/>
+            <while expression="numeroTentativi &lt; 3">
+                <output expression="&quot;Ciao benvenuto nel gioco indovina la parola magica &#13;&#10;Indovina la parola magica: &quot;" newline="True"/>
+                <input variable="tryword"/>
+                <if expression="tryword == magicword">
+                    <then>
+                        <output expression="&quot;Bravo hai vinto in &quot; &amp; numeroTentativi &amp; &quot; tentativi&quot;" newline="True"/>
+                        <assign variable="numeroTentativi" expression="3"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Mi dispiace ritenta sarai pi&#249; fortunato&quot;" newline="True"/>
+                        <assign variable="numeroTentativi" expression="numeroTentativi + 1"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

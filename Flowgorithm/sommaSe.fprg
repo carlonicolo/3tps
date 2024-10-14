@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-03 09:22:23 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMTAtMDM7IjA5OjA5OjM3ICI7MzA4Ng=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMTAtMDM7IjA5OjIyOjIzICI7NjszMTg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <declare name="risultatoSomma" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il primo numero: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Inserisci il secondo numero: &quot;" newline="True"/>
+            <input variable="num2"/>
+            <if expression="num2 &gt; num1">
+                <then>
+                    <output expression="&quot;Posso effettuare la somma !!!&quot;" newline="True"/>
+                    <assign variable="risultatoSomma" expression="num1 + num2"/>
+                    <output expression="&quot;Somma = &quot; &amp; risultatoSomma" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Mi dispiace ma il num2 &#232; pi&#249; grande di num1 e non sono autorizzato a fare la somma dei due numeri !!!&quot;" newline="True"/>
+                    <if expression="(num2 MOD 2) == 0">
+                        <then>
+                            <output expression="&quot;num2 &#232; pari&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;num2 &#232; dispari&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-25 10:37:18 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMjU7IjA5OjIyOjUyICI7MzA5MA=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMjU7IjEwOjM3OjE4ICI7NDszMjAx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Il programma valuta se la somma di due numeri &#232; maggiore o minore di un numero dato.&#13;&#10;Se &#232; maggiore visualizzer&#224; il messaggio &quot;WOW&quot;&#13;&#10;Se &#232; minore il messaggio &quot;OH NO!&quot;"/>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <declare name="risultatosomma" type="Integer" array="False" size=""/>
+            <declare name="valoresentinella" type="Integer" array="False" size=""/>
+            <assign variable="valoresentinella" expression="11"/>
+            <assign variable="num1" expression="8"/>
+            <assign variable="num2" expression="4"/>
+            <assign variable="risultatosomma" expression="num1 + num2"/>
+            <if expression="risultatosomma &gt; valoresentinella">
+                <then>
+                    <output expression="&quot;WOW&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Oh NO!!!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

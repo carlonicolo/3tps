@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-30 09:09:01 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMzA7IjA4OjU0OjA4ICI7MzA5MQ=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMzA7IjA5OjA5OjAxICI7ODszMjAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Programma che valuta se un numero intero dato &#232; &#13;&#10;maggiore o minore di 10.&#13;&#10;Se &#232; maggiore stampa i valori da 0 a 10&#13;&#10;Se &#232; minore stampa i valori da 10 a 0&#13;&#10;(usando un cilco while o for)"/>
+            <declare name="val" type="Integer" array="False" size=""/>
+            <assign variable="val" expression="9"/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <assign variable="index" expression="0"/>
+            <if expression="val &gt; 10">
+                <then>
+                    <for variable="index" start="0" end="10" direction="inc" step="1">
+                        <output expression="index" newline="True"/>
+                    </for>
+                </then>
+                <else>
+                    <for variable="index" start="10" end="0" direction="dec" step="1">
+                        <output expression="index" newline="True"/>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -39,3 +39,34 @@ print("***   ***")
 print("  *   *")
 print("  *   *")
 print("  *****")
+
+# Soluzione Daniel
+
+print("     *\n","   * *\n","  *   *\n"," *     *\n","***   ***\n","  *   *\n","  *   *\n","  *****\n")
+
+# rendi la freccia 2 volte piu grande mantenendo le proporzioni
+
+
+print("         *\n","       * *\n","      *   *\n","     *     *\n","    *       *\n","   *         *\n","  *           *\n"," *             *\n","****         ****\n","****         ****\n","    *        *\n","    *        *\n","    *        *\n","    *        *\n","    **********\n","    **********\n")
+
+
+
+# metti due frecce una accanto al altra
+
+print("    *       "*2,"   * *      "*2,"  *   *     "*2," *     *    "*2,"***   ***   "*2,"  *   *     "*2,"  *   *     "*2,"  *****     "*2,sep=" \n")
+
+
+# metti due frecce una accanto al altra
+
+print('    *     '*2,sep="\n")
+print('   * *    '*2,sep="\n")
+print('  *   *   '*2,sep="\n")
+print(' *     *  '*2,sep="\n")
+print('***   *** '*2,sep="\n")
+print('  *   *   '*2,sep="\n")
+print('  *   *   '*2,sep="\n")
+print('  *****   '*2,sep="\n")
+
+# prova con parole
+
+print('Stampa '*2,sep="\n",end="**")

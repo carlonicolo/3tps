@@ -21,3 +21,5 @@ Expected output
 """Python"""
 
 '''
+
+print("\"I'm\"\n\"\"learning\"\"\n\"\"\"Python\"\"\"\n ")

@@ -16,3 +16,8 @@ Programming***Essentials***in...Python
 
 print("Programming","Essentials","in")
 print("Python")
+
+
+# Soluzione Daniel
+print("Programming","Essentials","in",sep="***",end="...")
+print("Python",end="*")

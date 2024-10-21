@@ -55,6 +55,7 @@ Expected output
 12.25 kilometers is 7.61 miles
 '''
 
+'''
 kilometers = 12.25
 miles = 7.38
 
@@ -63,3 +64,36 @@ kilometers_to_miles = ###
 
 print(miles, "miles is", round(miles_to_kilometers, 2), "kilometers")
 print(kilometers, "kilometers is", round(kilometers_to_miles, 2), "miles")
+'''
+
+# Lab Daniel
+kilometers = 12.25
+miles = 7.38
+
+miles_to_kilometers = (miles * 1.697)
+kilometers_to_miles = (kilometers/1.576)
+
+print(miles, "miles is", round(miles_to_kilometers, 2), "kilometers")     #round arrotonda il risultato dei numeri dopo la virgola , 
+print(kilometers, "kilometers is", round(kilometers_to_miles, 2), "miles")#in questo caso 2 , guarda è specificato dopo la variabile
+
+#conventitore temperatura
+
+celsius = 20
+fahrenheiht = 85
+
+celsius_to_fahrenheit = (celsius*9/5)+32
+fahrenheit_to_celsius = (fahrenheiht-32)/9*5
+
+print(celsius,"celsius is : ",round(celsius_to_fahrenheit,1),"fahrenheit")
+print(fahrenheiht,"fahrenheit is :",round(fahrenheit_to_celsius,1),"celsius")
+
+#convertitore euro dollaro
+
+euro = 85
+dollaro = 59
+
+euro_to_dollaro = euro*1.077
+dollaro_to_euro = dollaro / 1.077
+
+print(euro , " euro is : ",round(euro_to_dollaro,3),"dollar")
+print(dollaro , "dollar is : ",round(dollaro_to_euro,3),"euro")

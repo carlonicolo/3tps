@@ -24,10 +24,12 @@
 
 int main()
 {
-	//int nine = o09;
-	int nine = 1001;
+	// int nine = o09;
+	// int nine = 0x1001;
 	int ten = 0xA;
-	printf("The value of nine is: %d \n", nine);
+	int dieci = 10;
+	// printf("The value of nine is: %d \n", nine);
 	printf("The value of ten is: %d \n", ten);
+	printf("The value of ten is: %X \n", dieci);
 	return 0;
 }

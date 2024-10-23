@@ -1,0 +1,15 @@
+# C programming
+int testInteger;
+printf("Inserisci la tua età: ");
+scanf("%d", &testInteger);  
+printf("Età = %d",testInteger);
+
+# C++
+int eta;
+cout << "Inserisci la tua età" << endl;
+cin >> eta >> endl;
+cout << "Età = " << eta << endl;
+
+# Python
+eta = input("Inserisci la tua età: ")
+print("Età: " + eta)

@@ -16,8 +16,8 @@ int main()
         printf("Hello World \n");
     } */
 
-    int numero1 = 5;
-    int numero2 = 6;
+    // int numero1 = 5;
+    // int numero2 = 6;
 
     for (int j = 0; j < 10; ++j)
     {

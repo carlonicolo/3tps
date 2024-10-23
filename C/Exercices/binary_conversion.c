@@ -10,7 +10,7 @@ void print_binary(int num) {
 }
 
 int main() {
-    int number = 10;  // Decimal number
+    int number = 255;  // Decimal number
     printf("Decimal: %d\n", number);
     printf("Binary: ");
     print_binary(number);  // Print binary representation

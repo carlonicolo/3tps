@@ -3,7 +3,8 @@ CC = gcc
 CFLAGS = -Wall -g
 
 # List of programs (executables)
-TARGETS = array cicli operatore_ternario
+TARGETS = array cicli operatore_ternario binary_conversion hello PrimaEsercitazione \
+    shift somma tabellina_due
 
 # Default target (build all programs)
 all: $(TARGETS)
@@ -19,6 +20,27 @@ cicli: cicli.c
 # Rule to build prog3
 operatore_ternario: operatore_ternario.c
 	$(CC) $(CFLAGS) -o operatore_ternario operatore_ternario.c
+
+# Rule to build prog3
+binary_conversion: binary_conversion.c
+	$(CC) $(CFLAGS) -o binary_conversion binary_conversion.c
+
+# Rule to build prog3
+hello: hello.c
+	$(CC) $(CFLAGS) -o hello hello.c
+
+# Rule to build prog3
+PrimaEsercitazione: PrimaEsercitazione.c
+	$(CC) $(CFLAGS) -o PrimaEsercitazione PrimaEsercitazione.c
+
+shift: shift.c
+	$(CC) $(CFLAGS) -o shift shift.c
+
+somma: somma.c
+	$(CC) $(CFLAGS) -o somma somma.c
+
+tabellina_due: tabellina_due.c
+	$(CC) $(CFLAGS) -o tabellina_due tabellina_due.c
 
 # Clean up object and executable files
 clean:

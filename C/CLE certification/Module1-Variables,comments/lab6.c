@@ -30,22 +30,25 @@ Expected Output
 
 */
 
-#include <stdio.h> /* we included stdio.h */
-#include <stdlib.h> /* we included stdlib.h */
+#include <stdio.h>
+#include <stdlib.h>
 
-int main()
-{
-  int v=10800; /* 3*60*60 */
-  
-  int zzz=3*60; /* This is a variable to hold the value of 3 minutes in seconds */
+int main() {
+    int second_to_our = 10800; /* raccoglie i secondi che servono per riempire 3 ore (3*60*60) */
 
-  int zzz=5*60; /* This is a variable to hold the value of 6 minutes in seconds */
-  
-  float siii=3.141526; /* This is the value of pi */
-  
-  
-  /* printf(" value of some variable: %d \n", otherVariable);
-      here we should print the v value, but a programmer didn't have time to write the code.
-      However, he/she likes writing long, well formatted comments
-   */
+    int second_to_minute1 = 180; /*raccoglie i secondi che servono per riempire 3 minuti (3*60) */
+
+    int second_to_minute2 = 300; /* raccoglie i secondi che servono per riempire 5 minuti (5*60) */
+
+    printf("value of some variable %d second for composite 3 our\n", second_to_our);
+    printf("value of some variable %d second for composite 3 minute\n", second_to_minute1);
+    printf("value of some variable %d second for composite 5 minute\n", second_to_minute2);
+    return 0;
+    // commento
+
+    /**
+     * printf(" value of some variable: %d \n", otherVariable);
+        here we should print the v value, but a programmer didn't have time to write the code.
+        However, he/she likes writing long, well formatted comments
+     */
 }

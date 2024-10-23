@@ -22,6 +22,6 @@
 
 int main()
 {
-	printf("The value of six is: %d \n", 16,0-10-);
+	printf("The value of six is: %d \n", 16-10);
 	return 0;
 }

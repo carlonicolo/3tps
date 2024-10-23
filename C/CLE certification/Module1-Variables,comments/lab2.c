@@ -23,6 +23,7 @@
 
 int main()
 {
-	printf("The value of five is: %d \n", 5int);
+	int numero =5;
+	printf("The value of five is equal to: %d \n",numero);
 	return 0;
 }

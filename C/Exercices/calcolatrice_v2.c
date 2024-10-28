@@ -32,15 +32,15 @@ int main()
         switch (operator)
         {
         case '+':
-            float somma = num1 + num2;
-            printf("Il risultato della somma è : %f\n", somma);
+            //float somma = num1 + num2;
+            printf("Il risultato della somma è : %f\n", num1 + num2);
             break;
         case '-':
-            float sottrazione = num1 - num2;
-            printf("Il risultato della sottrazione è : %f\n", sottrazione);
+            //float sottrazione = num1 - num2;
+            printf("Il risultato della sottrazione è : %f\n", num1 - num2);
             break;
         case '*':
-            float moltiplicazione = num1 * num2;
+            //float moltiplicazione = num1 * num2;
             printf("Il risultato della moltiplicazione è : %f\n", num1 * num2);
             break;
         case '/':
@@ -53,8 +53,8 @@ int main()
             if (num2 != 0)
             {
 
-                float divisione = num1 / num2;
-                printf("Il risultato della divisione è : %f\n", divisione);
+                //float divisione = num1 / num2;
+                printf("Il risultato della divisione è : %f\n", num1 / num2);
             }
             break;
         }

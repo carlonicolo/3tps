@@ -7,6 +7,6 @@ Se è minore stampa i valori da 10 a 0
 '''
 
 # valore intero dato
-val1 = ?
+#val1 = ?
 
 # valutare se ....

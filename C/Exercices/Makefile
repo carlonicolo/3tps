@@ -4,7 +4,7 @@ CFLAGS = -Wall -g
 
 # List of programs (executables)
 TARGETS = array cicli operatore_ternario binary_conversion hello PrimaEsercitazione \
-    shift somma tabellina_due input_v1 calcolatrice_v2
+    shift somma tabellina_due input_v1 calcolatrice_v2 cicliArray
 
 # Default target (build all programs)
 all: $(TARGETS)
@@ -47,6 +47,9 @@ input_v1: input_v1.c
 
 calcolatrice_v2: calcolatrice_v2.c
 	$(CC) $(CFLAGS) -o calcolatrice_v2 calcolatrice_v2.c
+
+cicliArray: cicliArray.c
+	$(CC) $(CFLAGS) -o cicliArray cicliArray.c
 
 # Clean up object and executable files
 clean:

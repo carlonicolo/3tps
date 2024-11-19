@@ -1,0 +1,9 @@
+$ mkdir Lab1
+$ cd Lab1
+$ nano exercise.c
+
+# Now we compile exercise.c
+$ gcc exercise.c -o exercise
+
+
+1 2 3 4 5 

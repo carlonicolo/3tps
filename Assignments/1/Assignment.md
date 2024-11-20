@@ -1,4 +1,4 @@
-# 
+# Assignment
 
 - Create a simple program that uses array/s
   - from array {1,2,3,4,5} -> to square -> {1,4,9,25} 

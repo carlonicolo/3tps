@@ -7,6 +7,6 @@
 and then compute the max number among all elements
 
 - Create a simple program that prints a triangle using asterisk (using loop)
-  *
-  **
-  ***
+  *   
+  **    
+  \***  

@@ -12,8 +12,8 @@ and then compute the max number among all elements
 
 ## Task 3
 
-* Create a simple program that prints a triangle using asterisk (using loop)
-  *   
+* Create a simple program that prints a triangle using asterisk (using loop)  
+  \*   
   **    
   \***  
 

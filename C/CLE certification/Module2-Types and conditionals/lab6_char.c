@@ -15,3 +15,18 @@ Expected output
 Upper case letters beetween (and with) 'Z' and 'A' is : 26
 Lower case letters beetween (and with) 'z' and 'a' is : 26
 */
+
+#include <stdio.h>
+
+int main()
+{
+	char firstLetter = 'A';
+	char firstSmallLetter = 'a';
+	char lastLetter = 'Z';
+	char lastSmallLetter = 'z';
+	printf("Upper case letters beetween (and with) '%c' and '%c' is : %d\n", 
+		lastLetter, firstSmallLetter, lastLetter firstLetter 1);
+	printf("Lower case letters beetween (and with) '%c' and '%c' is : %d\n", 
+		lastSmallLetter, firstSmallLetter, lastSmallLetter, firstLetter, 1);
+	return 0;
+}

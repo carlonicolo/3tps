@@ -23,3 +23,14 @@ Expected output
 '9' - '0' is: 9
 '0' - '0' is: 0
 */
+
+#include <stdio.h>
+
+int main()
+{
+	char zero = '0';
+
+	/*Your code*/
+
+	return 0;
+}

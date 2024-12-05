@@ -5,4 +5,4 @@
 * [Module 3](./Module3-FlowControls/README.md)
 * Module 4
 * Module 5
-* Module 6
+* Module 6  

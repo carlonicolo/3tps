@@ -28,3 +28,21 @@ StudentA      4.20       4.50       4.20       4.30
 StudentB      4.30       4.40       4.70       4.47
 StudentC      4.30       4.80       4.90       4.67
 */
+
+#include <stdio.h>
+int main()
+{
+	float studentAYear1 = 4.2;
+	float studentAYear2 = 4.5;
+	float studentAYear3 = 4.2;
+	
+	float studentBYear1 = 4.3;
+	float studentBYear2 = 4.4;
+	float studentBYear3 = 4.7;
+	
+	float studentCYear1 = 4.3;
+	float studentCYear2 = 4.8;
+	float studentCYear3 = 4.9;
+	/* your code */
+	return 0;
+}

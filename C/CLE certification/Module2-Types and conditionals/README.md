@@ -1,5 +1,7 @@
 # Module 2
 
+## Basic data types, operations and flow control
+
 In this module, you will learn about:  
 
 * floating-point values in real life and in C,

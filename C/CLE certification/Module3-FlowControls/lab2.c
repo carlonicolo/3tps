@@ -31,16 +31,16 @@ int main(void)
 	float notExactNumber = 6.7;
 	int exactFive;
 	int roundedNumber;
-	if notExactNumber - notExactNumber > 0.5
+	if (notExactNumber - notExactFive > 0.5)
 	{
 		roundedNumber = (int)notExactNumber + 1;
 	}
 	else
 	{
-		roundedNumber = int notExactNumber;
+		roundedNumber = (int)notExactNumber;
 	}
 	exactFive = (int)notExactFive;
-	printf("Five is: %f\n", exactFive);
+	printf("Five is: %d\n", exactFive);
 	printf("Rounded to seven: %d\n", roundedNumber);
 	return 0;
 }

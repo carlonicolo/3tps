@@ -13,6 +13,7 @@ int main(void)
     int Number;
 
     /* read the first number */
+    printf("Insert number :");
     scanf("%d", &Number);
 
     /* 0 terminates execution */
@@ -25,6 +26,7 @@ int main(void)
             /* increase the even counter */
             Evens++;
         /* read the next number */
+        printf("Insert next number , for exit write 0 : ");
         scanf("%d", &Number);
     }
     /* print results */

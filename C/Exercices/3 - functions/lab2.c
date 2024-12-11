@@ -1,12 +1,17 @@
 /**
- * @file lab1.c
+ * @file lab2.c
  * @author Carlo Nicolò
- * @brief
+ * @brief 
  * @version 0.1
- * @date 2024-12-09
+ * @date 2024-12-11
+ * 
  */
 
 #include <stdio.h>
+
+void calculateSum();
+int calculateSumInt();
+int calculateSumIntParams(int param1, int param2);
 
 // Void function example
 // no return!

@@ -29,6 +29,6 @@ cmake ..
 make
 ```
 
-### Set Up Your Project:
+### Set Up Your Project
 
-Include the Google Test library in your CMake project.
+Include the Google Test library in your CMake project.  

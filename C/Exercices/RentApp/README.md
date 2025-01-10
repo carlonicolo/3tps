@@ -1,4 +1,4 @@
-# Lab4 - App Noleggio auto
+# RentApp
 
 ## Menù
 

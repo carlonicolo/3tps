@@ -3,7 +3,7 @@ CC = gcc
 CFLAGS = -Wall -g
 
 # List of programs (executables)
-TARGETS = lab1 lab2 lab3 #lab4 lab5 lab6 lab7
+TARGETS = lab1 lab2 lab3 lab4 #lab5 lab6 lab7
 
 # Default target (build all programs)
 all: $(TARGETS)
@@ -17,8 +17,8 @@ lab2: lab2.c
 lab3: lab3.c
 	$(CC) $(CFLAGS) -o lab3 lab3.c
 
-#lab4: lab4.c
-#	$(CC) $(CFLAGS) -o lab4 lab4.c
+lab4: lab4.c
+	$(CC) $(CFLAGS) -o lab4 lab4.c
 
 #lab5: lab5.c
 #	$(CC) $(CFLAGS) -o lab5 lab5.c

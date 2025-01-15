@@ -19,6 +19,12 @@ struct Person
     int eta;
 };
 
+typedef struct
+{
+    char nome[20];
+    int cilindrata;
+} Auto;
+
 
 //------------------------------------------------------------------------------------------------------
 
@@ -41,18 +47,28 @@ char *cambioStringa(char nuovaStringa[20]){
 
 //------------------------------------------------------------------------------------------------------
 
-/*
-char struttura(p1){
+/**
+ * Metodo utilizzato per cambiare i valori di una struttura
+ * passata come parametro
+ */
+void cambioValoriStruttura(Auto *a, const char *nome, int cilindrata){
+    if (a == NULL) {
+        return; // Handle null pointer safely
+    }
 
-    strcpy(p1.nome,"Pluto");
-    p1.eta = 30
+    printf("\nBMW address: %p", &a);
+    printf("\n");
+    //printf("Inside cambioValoriStruttura\n");
 
-    return ;
+    strncpy(a->nome, nome, sizeof(a->nome) - 1); // Safely copy the name
+    a->nome[sizeof(a->nome) - 1] = '\0'; // Ensure null termination
 
+    //printf("Nome: %s\nCilindrata: %d\n", a->nome, a->cilindrata);
+    //printf("\n");
+    a->cilindrata = 2500;
+    //printf("Nome: %s\nCilindrata: %d\n", a->nome, a->cilindrata);
+    //return a;
 }
-*/
-
-
 
 
 int main(){
@@ -68,7 +84,7 @@ int main(){
     printf("Indirizzo variabile c : %p\n",ptr);
     printf("Cambio valore variabile tramite puntatore , nuovo valore in c\n");
 
-    *ptr  = 10;
+    *ptr  = 50;
 
     printf("Contenuto variabile c : %d\n",c);
 
@@ -98,18 +114,20 @@ int main(){
 
 //------------------------------------------------------------------------------------------------------
 
-
-
     struct Person p1 ;
 
     strcpy(p1.nome,"Pippo");
 
     p1.eta = 20;
+    printf("\n");
 
-    //cambioStruttura(struct Person p1);
+    // Aggiunto dopo la consegna
+    Auto bmw = {"520d",2000};
+    printf("Nome: %s\nCilindrata: %d\n", bmw.nome, bmw.cilindrata);
+    printf("BMW address: %p", &bmw);
 
-
-
+    cambioValoriStruttura(&bmw, "530d", 2500);
+    printf("Nome: %s\nCilindrata: %d\n", bmw.nome, bmw.cilindrata);
 
     return 0;
 }

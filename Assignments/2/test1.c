@@ -26,7 +26,7 @@ int somma(int x,int y){
 
 // FUNZIONE ARRAY
 
-float *ciclaArray(float x[]){
+void ciclaArray(float x[]){
 
     printf("Sono nella funzione : \n");
 
@@ -36,7 +36,7 @@ float *ciclaArray(float x[]){
         x[i] = x[i] +1;
     }
 
-    return x;
+    //return x;
 }
 
 // FUNZIONE VOID 
@@ -49,14 +49,9 @@ void saluto(){
 }
 
 
-
-
-
-
 int main(){
 
     // FUNZIONE SOMMA
-
 
     int a = 5;
     int b = 10;

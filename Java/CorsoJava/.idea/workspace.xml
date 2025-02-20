@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39cfaf78-b920-4139-8cb9-f8fdb4107699" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="39cfaf78-b920-4139-8cb9-f8fdb4107699" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,6 +99,7 @@
       <updated>1739566500959</updated>
       <workItem from="1739566502425" duration="2042000" />
       <workItem from="1739570929026" duration="29000" />
+      <workItem from="1739825567934" duration="901000" />
     </task>
     <servers />
   </component>

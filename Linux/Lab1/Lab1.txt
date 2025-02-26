@@ -1,6 +1,6 @@
 1 - creare una cartella Lab1
 2 - nella cartella Lab1 crea un file exercise1.c
-3 - apri il file exercice e crei un semplice programma in C
+3 - apri il file exercice e crea un semplice programma in C
 	- come editor puoi utilizzare nano, visual studio code o qualsiasi altro editor a piacere.
 	Alcune alternative per lanciare un editor
 	$ kate exercise1.c &

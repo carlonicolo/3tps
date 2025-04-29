@@ -34,4 +34,14 @@ public class Animal {
     public void setHasLegs(boolean hasLegs) {
         this.hasLegs = hasLegs;
     }
+
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", hasLegs=" + hasLegs +
+                '}';
+    }
 }

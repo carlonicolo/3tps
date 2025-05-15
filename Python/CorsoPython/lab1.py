@@ -26,3 +26,6 @@ print(f'Divisione: {risultato_divisione}')
 print(f'var4: {var4}')
 var4 = num1 < num2
 print(f'Risultato comparazione num1 < num2: {var4}')
+
+print("Divisione: ", risultato_divisione, " Yeah!!!")
+print(f'Divisione: {risultato_divisione} Yeah!!!')

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+# Primo semplice programma python
+# che calcola la somma di due numeri
+
+num1 = 10
+num2 = 20
+
+name = "Davide"
+# n = "20"
+
+somma = num1 + num2
+print("La somma di num1 + num2 è: " + str(somma))
+print(name)
+=======
 # Questo è un commento
 # Dichiarazione di variabili
 var1 = 5        # variabile tipo int
@@ -29,3 +43,4 @@ print(f'Risultato comparazione num1 < num2: {var4}')
 
 print("Divisione: ", risultato_divisione, " Yeah!!!")
 print(f'Divisione: {risultato_divisione} Yeah!!!')
+>>>>>>> 0858205b1bd150ed697ac706f020583b07e16e66

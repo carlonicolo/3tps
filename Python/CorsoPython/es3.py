@@ -16,3 +16,9 @@ elif((a < 2) and (b > 7)):
     print("Buuu")
 else:
     print("Mi dispiace hai perso.")
+    
+    
+if((a < 2) or (b > 5)):
+    print("Good")
+else:
+    print("No good")

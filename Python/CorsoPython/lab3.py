@@ -1,12 +1,16 @@
-# Esercitazione operatori logici
+num1 = int(input("Inserisci il primo numero "))
+num2 = int(input("Inserisci il secondo numero "))
 
-# Chiedi all'utente di inserire due numeri
-num1 = # 
-num2 = # 
+if((num1 > 10) and (num2 < 12)):
+    print("Wow!")
+elif((num1 < 10) and (num2 > 12)):
+    print("Eii!")
+else:
+    print("HAI VINTO!")
 
-if ((num1 > 10) and (num2 < 12)):
-    print("Maybe your number is 11")
-elif# inserisci altre condizioni e valutale
-
-
-# stessa cosa usando or
+if((num1 == 7) or (num2 > 15)):
+    print("Vero")
+elif((num1 < 15) or (num2 == 7)):
+    print("Falso")
+else:
+    print("Dobbiamo rifare tutto")

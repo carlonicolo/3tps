@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-08 08:38:50 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjMtMTEtMDg7IjA4OjAxOjMyICI7MzA3Nw=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjMtMTEtMDg7IjA4OjM4OjUwICI7NTszMTk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, risultato" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il primo numero&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Valore num1 &quot; &amp; num1" newline="True"/>
+            <output expression="&quot;inserisci le seocndo numero&quot;" newline="True"/>
+            <input variable="num2"/>
+            <output expression="&quot;Il valore di num2 &#232;: &quot; &amp; num2" newline="True"/>
+            <assign variable="risultato" expression="num1+num2"/>
+            <output expression="&quot;La somma di num1 e num2 &#232;: &quot; &amp; risultato" newline="True"/>
+            <assign variable="num1" expression="num1+1"/>
+            <assign variable="num2" expression="num2+1"/>
+            <assign variable="risultato" expression="somma(num1,num2)"/>
+            <output expression="&quot;Il risultato della funzione somma &#232;: &quot; &amp; risultato" newline="True"/>
+        </body>
+    </function>
+    <function name="somma" type="Integer" variable="risultato">
+        <parameters>
+            <parameter name="num1" type="Integer" array="False"/>
+            <parameter name="num2" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="risultato" type="Integer" array="False" size=""/>
+            <assign variable="risultato" expression="num1+num2"/>
+        </body>
+    </function>
+</flowgorithm>

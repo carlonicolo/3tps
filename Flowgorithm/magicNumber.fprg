@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-03 09:02:11 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjMtMTEtMDM7IjA4OjQ5OjU5ICI7MzA5Mw=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjMtMTEtMDM7IjA5OjAyOjExICI7NTszMTgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="magicNumber" type="Integer" array="False" size=""/>
+            <declare name="tryNumber" type="Integer" array="False" size=""/>
+            <assign variable="magicNumber" expression="3"/>
+            <output expression="&quot;Indovina il numero magico&quot;" newline="True"/>
+            <input variable="tryNumber"/>
+            <if expression="tryNumber == magicNumber">
+                <then>
+                    <output expression="&quot;Bravo hai vinto !!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Mi dispiace hai perso !!!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

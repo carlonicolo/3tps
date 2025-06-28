@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-03 09:41:27 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjMtMTEtMDM7IjA5OjA0OjIwICI7MzA3Mw=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjMtMTEtMDM7IjA5OjA1OjQzICI7MTtLYXJsaXRvcztERVNLVE9QLUI3RU9CTDg7MjAyMy0xMS0wMzsiMDg6NDk6NTkgIjttYWdpY051bWJlci5mcHJnOzgwMDU="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjMtMTEtMDM7IjA5OjQxOjI3ICI7ODszMTk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeroTentativi" type="Integer" array="False" size=""/>
+            <assign variable="numeroTentativi" expression="0"/>
+            <declare name="magicNumber" type="Integer" array="False" size=""/>
+            <declare name="tryNumber" type="Integer" array="False" size=""/>
+            <assign variable="magicNumber" expression="3"/>
+            <output expression="&quot;Indovina il numero magico&quot;" newline="True"/>
+            <input variable="tryNumber"/>
+            <if expression="tryNumber == magicNumber">
+                <then>
+                    <output expression="&quot;Bravo hai vinto !!!&quot;" newline="True"/>
+                    <declare name="i" type="Integer" array="False" size=""/>
+                    <for variable="i" start="1" end="5" direction="inc" step="1">
+                        <output expression="&quot;Bravo !!!&quot;" newline="True"/>
+                    </for>
+                </then>
+                <else>
+                    <assign variable="numeroTentativi" expression="numeroTentativi+1"/>
+                    <output expression="&quot;Mi dispiace hai sbagliato numero !&quot;" newline="True"/>
+                    <while expression="tryNumber != magicNumber">
+                        <assign variable="numeroTentativi" expression="numeroTentativi+1"/>
+                        <output expression="&quot;Prova di nuovo sarai pi&#249; fortunato !&quot;" newline="True"/>
+                        <input variable="tryNumber"/>
+                    </while>
+                    <output expression="&quot;Bravo finalmente hai vinto dopo &quot; &amp; numeroTentativi &amp; &quot; tentativi !!!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

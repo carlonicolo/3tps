@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="esercitazione1Cicli"/>
+        <attribute name="authors" value="carlo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-30 09:26:17 "/>
+        <attribute name="created" value="Y2FybG87SlVaQTsyMDI1LTA5LTMwOyIwODo1NDoxOSAiOzIwNDY="/>
+        <attribute name="edited" value="Y2FybG87SlVaQTsyMDI1LTA5LTMwOyIwOToyNjoxNyAiOzc7MjE1OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="magicnumber" type="Integer" array="False" size=""/>
+            <assign variable="magicnumber" expression="10"/>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il numero magico: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <declare name="contatore" type="Integer" array="False" size=""/>
+            <assign variable="contatore" expression="1"/>
+            <while expression="num1 != magicnumber">
+                <assign variable="contatore" expression="contatore + 1"/>
+                <output expression="&quot;Mi dispiace non hai indovinato!!! Ritenta sarai pi&#249; fortunato: &quot;" newline="True"/>
+                <input variable="num1"/>
+            </while>
+            <output expression="&quot;Hai vinto!!! utilizzando &quot; &amp; contatore &amp; &quot; tentativi&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="operatoriLogici"/>
+        <attribute name="authors" value="carlo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-24 11:23:47 "/>
+        <attribute name="created" value="Y2FybG87SlVaQTsyMDI1LTA5LTI0OyIxMDo1Mzo0NiAiOzIwNDE="/>
+        <attribute name="edited" value="Y2FybG87SlVaQTsyMDI1LTA5LTI0OyIxMToyMzo0NyAiOzE7MjE0OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="0 a 3 neonato&#13;&#10;&#13;&#10;3 a 12 bambino&#13;&#10;&#13;&#10;12 a 17 adolescente&#13;&#10;&#13;&#10;17 a 25 ragazzo&#13;&#10;&#13;&#10;25 in su uomo"/>
+            <declare name="nome" type="String" array="False" size=""/>
+            <output expression="&quot;Come ti chiami?&quot;" newline="True"/>
+            <input variable="nome"/>
+            <declare name="eta" type="Integer" array="False" size=""/>
+            <output expression="nome &amp; &quot; quanti anni hai?&quot;" newline="True"/>
+            <input variable="eta"/>
+            <if expression="eta &gt;= 0 &amp;&amp; eta &lt;= 3">
+                <then>
+                    <output expression="nome &amp; &quot; sei un neonato!!!&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

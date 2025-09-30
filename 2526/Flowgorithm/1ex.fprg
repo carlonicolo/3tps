@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1ex"/>
+        <attribute name="authors" value="carlo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-18 10:57:30 "/>
+        <attribute name="created" value="Y2FybG87SlVaQTsyMDI1LTA5LTE4OyIxMDo0NTo1NiAiOzIwNDY="/>
+        <attribute name="edited" value="Y2FybG87SlVaQTsyMDI1LTA5LTE4OyIxMDo1NzozMCAiOzE7MjE0OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="var1" type="Integer" array="False" size=""/>
+            <declare name="var2" type="Integer" array="False" size=""/>
+            <declare name="somma" type="Integer" array="False" size=""/>
+            <assign variable="var1" expression="5"/>
+            <assign variable="var2" expression="10"/>
+            <assign variable="somma" expression="var1 + var2"/>
+            <output expression="&quot;Il valore della somma dei due valori &#232;: &quot; &amp; somma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

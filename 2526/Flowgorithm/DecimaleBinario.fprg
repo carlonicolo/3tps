@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="DecimaleBinario"/>
+        <attribute name="authors" value="carlo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-07 11:34:41 "/>
+        <attribute name="created" value="Y2FybG87SlVaQTsyMDI1LTEwLTA3OyIxMDo0MzowNiAiOzIwMjk="/>
+        <attribute name="edited" value="Y2FybG87SlVaQTsyMDI1LTEwLTA3OyIxMTozNDo0MSAiOzE2OzIxOTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="decimale" type="Integer" array="False" size=""/>
+            <assign variable="decimale" expression="15"/>
+            <declare name="resParziale" type="Integer" array="True" size="4"/>
+            <declare name="resFinale" type="Integer" array="True" size="4"/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <assign variable="index" expression="0"/>
+            <while expression="decimale !=0">
+                <if expression="decimale % 2 == 0">
+                    <then>
+                        <assign variable="resParziale[index]" expression="0"/>
+                        <assign variable="decimale" expression="decimale/2"/>
+                        <assign variable="index" expression="index + 1"/>
+                    </then>
+                    <else>
+                        <assign variable="resParziale[index]" expression="1"/>
+                        <assign variable="decimale" expression="decimale/2"/>
+                        <assign variable="index" expression="index + 1"/>
+                    </else>
+                </if>
+            </while>
+            <declare name="indexArr" type="Integer" array="False" size=""/>
+            <assign variable="indexArr" expression="3"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <for variable="indexArr" start="3" end="0" direction="dec" step="1">
+                <output expression="resParziale[indexArr]" newline="True"/>
+                <assign variable="resFinale[i]" expression="resParziale[indexArr]"/>
+                <assign variable="i" expression="i+1"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

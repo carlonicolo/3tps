@@ -4,9 +4,9 @@
         <attribute name="name" value="esercitazione1Cicli"/>
         <attribute name="authors" value="carlo"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-09-30 11:29:15 "/>
+        <attribute name="saved" value="2025-10-01 10:02:00 "/>
         <attribute name="created" value="Y2FybG87SlVaQTsyMDI1LTA5LTMwOyIwODo1NDoxOSAiOzIwNDY="/>
-        <attribute name="edited" value="Y2FybG87SlVaQTsyMDI1LTA5LTMwOyIxMToyOToxNSAiOzE1OzIxOTk="/>
+        <attribute name="edited" value="Y2FybG87SlVaQTsyMDI1LTEwLTAxOyIxMDowMjowMCAiOzE3OzIxNzU="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -14,7 +14,8 @@
             <declare name="vite" type="Integer" array="False" size=""/>
             <assign variable="vite" expression="3"/>
             <declare name="magicnumber" type="Integer" array="False" size=""/>
-            <assign variable="magicnumber" expression="10"/>
+            <assign variable="magicnumber" expression="Random(11)"/>
+            <output expression="&quot;random number is: &quot; &amp; magicnumber" newline="True"/>
             <declare name="num1" type="Integer" array="False" size=""/>
             <output expression="&quot;Inserisci il numero magico: &quot;" newline="True"/>
             <input variable="num1"/>

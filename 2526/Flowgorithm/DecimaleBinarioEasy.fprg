@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="DecimaleBinario"/>
+        <attribute name="authors" value="carlo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-09 09:10:03 "/>
+        <attribute name="created" value="Y2FybG87SlVaQTsyMDI1LTEwLTA3OyIxMDo0MzowNiAiOzIwMjk="/>
+        <attribute name="edited" value="Y2FybG87SlVaQTsyMDI1LTEwLTA5OyIwOToxMDowMyAiOzI4OzIxOTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeroBinario" type="String" array="False" size=""/>
+            <assign variable="numeroBinario" expression="&quot; &quot;"/>
+            <declare name="decimale" type="Integer" array="False" size=""/>
+            <declare name="numeroDecimaleUser" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci un numero decimale da convertire in binario -&gt; &quot;" newline="True"/>
+            <input variable="numeroDecimaleUser"/>
+            <assign variable="decimale" expression="numeroDecimaleUser"/>
+            <while expression="decimale !=0">
+                <if expression="decimale % 2 == 0">
+                    <then>
+                        <assign variable="numeroBinario" expression="&quot;0&quot; &amp; numeroBinario"/>
+                        <assign variable="decimale" expression="decimale/2"/>
+                    </then>
+                    <else>
+                        <assign variable="numeroBinario" expression="&quot;1&quot; &amp; numeroBinario"/>
+                        <assign variable="decimale" expression="decimale/2"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="numeroBinario" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

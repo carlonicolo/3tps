@@ -4,9 +4,9 @@
         <attribute name="name" value="Array"/>
         <attribute name="authors" value="carlo"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-14 11:12:08 "/>
+        <attribute name="saved" value="2025-10-15 09:54:06 "/>
         <attribute name="created" value="Y2FybG87SlVaQTsyMDI1LTEwLTE0OyIxMDo1NzoyNyAiOzIwMzU="/>
-        <attribute name="edited" value="Y2FybG87SlVaQTsyMDI1LTEwLTE0OyIxMToxMjowOCAiOzU7MjEzOA=="/>
+        <attribute name="edited" value="Y2FybG87SlVaQTsyMDI1LTEwLTE1OyIwOTo1NDowNiAiOzc7MjE1Mg=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -27,9 +27,12 @@
             <declare name="i" type="Integer" array="False" size=""/>
             <assign variable="i" expression="0"/>
             <while expression="i &lt;= 4">
-                <assign variable="arr2[i]" expression="i"/>
+                <assign variable="arr2[i]" expression="i*2"/>
                 <assign variable="i" expression="i + 1"/>
             </while>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <assign variable="index" expression="8"/>
+            <declare name="arr3" type="Integer" array="True" size="index"/>
         </body>
     </function>
 </flowgorithm>

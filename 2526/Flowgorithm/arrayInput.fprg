@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="arrayInput"/>
+        <attribute name="authors" value="carlo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-15 11:47:56 "/>
+        <attribute name="created" value="Y2FybG87SlVaQTsyMDI1LTEwLTE1OyIxMTozNTowMCAiOzIwMjQ="/>
+        <attribute name="edited" value="Y2FybG87SlVaQTsyMDI1LTEwLTE1OyIxMTo0Nzo1NiAiOzc7MjE1Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dimArray" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci la dimensione dell'array: &quot;" newline="True"/>
+            <input variable="dimArray"/>
+            <declare name="numberArr" type="Integer" array="True" size="dimArray"/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <assign variable="index" expression="0"/>
+            <while expression="index &lt;= (dimArray - 1)">
+                <assign variable="numberArr[index]" expression="index * 10"/>
+                <assign variable="index" expression="index + 1"/>
+            </while>
+            <declare name="index2" type="Integer" array="False" size=""/>
+            <assign variable="index2" expression="0"/>
+            <declare name="userNumber" type="Integer" array="False" size=""/>
+            <while expression="index2 &lt;= (dimArray-1)">
+                <output expression="&quot;Inserisc un valore intero: &quot;" newline="True"/>
+                <input variable="userNumber"/>
+                <assign variable="numberArr[index2]" expression="userNumber"/>
+                <assign variable="index2" expression="index2 + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

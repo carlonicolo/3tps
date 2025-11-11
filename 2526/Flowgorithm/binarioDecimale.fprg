@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-11 10:05:44 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjUtMTEtMTE7IjA5OjQ3OjI3ICI7MzA4OA=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjUtMTEtMTE7IjEwOjA1OjQ0ICI7MTM7MzIzMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeroBinario" type="Integer" array="True" size="4"/>
+            <declare name="flag" type="Integer" array="False" size=""/>
+            <assign variable="flag" expression="0"/>
+            <output expression="&quot;Inserisci un numero binario un bit alla volta partendo dal bit pi&#249; significativo&quot;" newline="True"/>
+            <while expression="flag &lt;= 3">
+                <input variable="numeroBinario[flag]"/>
+                <assign variable="flag" expression="flag + 1"/>
+            </while>
+            <declare name="numeroBinarioStr" type="String" array="False" size=""/>
+            <assign variable="numeroBinarioStr" expression="&quot;&quot;"/>
+            <assign variable="flag" expression="0"/>
+            <while expression="flag &lt;= 3">
+                <assign variable="numeroBinarioStr" expression="numeroBinarioStr &amp; numeroBinario[flag]"/>
+                <assign variable="flag" expression="flag + 1"/>
+            </while>
+            <output expression="&quot;Valore binario -&gt; &quot; &amp; numeroBinarioStr" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

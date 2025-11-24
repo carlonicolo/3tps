@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-24 10:02:24 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjUtMTEtMjQ7IjA5OjU4OjQ1ICI7MzA5NA=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjUtMTEtMjQ7IjEwOjAyOjI0ICI7MTszMTgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeri" type="Integer" array="True" size="5"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <declare name="inputUtente" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;Inserisci i valori dell'array: &quot;" newline="True"/>
+                <input variable="inputUtente"/>
+                <assign variable="numeri[i]" expression="inputUtente"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

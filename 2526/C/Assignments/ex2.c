@@ -9,7 +9,6 @@ int main()
 
     // TODO Utilizzare il ciclo while per stampare la tabellina del numero
     //  inserito dall'utente fino a 10
-
     // while(?){}
 
     //TODO utilizzare il ciclo for per stampare la tabellina del numero inserito dall'utente

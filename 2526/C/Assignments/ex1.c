@@ -7,6 +7,7 @@ int main()
   printf("Quanti anni hai? \n");
   scanf("%d", &anni);
 
+  printf("Ciao Davide hai %d anni\n", anni);
   /*
   Stampa:
   0 a 3 neonato

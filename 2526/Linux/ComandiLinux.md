@@ -12,3 +12,16 @@ rm -R [NomeCartella]               ->
 nano nomeFile.txt   -> crea un file o modifica un file
 mv nomeFile.txt nomeFile2.txt    -> Rinomina il file nomeFile.txt in nomeFile2.txt
 mv nomeFile.txt /dev/null        -> Elimina definitivamente il file nomeFile.txt
+cat ex1.txt
+head ex1.txt
+more ex1.txt
+less ex1.txt
+tail ex1.txt
+
+## Nano commands
+CTRL+O    Salva file
+CTRL+X    Chiudi file
+CTRL+K    Taglia riga corrente
+CTRL+U    Incolla test
+CTRL+V    Cerca testo
+

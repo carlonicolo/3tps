@@ -1,0 +1,5 @@
+cat ex1.txt
+head ex1.txt
+more ex1.txt
+less ex1.txt
+tail ex1.txt

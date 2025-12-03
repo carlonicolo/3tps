@@ -12,7 +12,7 @@ echo " "
 # Verifica se il file esiste
 if [ -f "tabellina.cpp" ]; then
     echo "Compilo tabellina.cpp..."
-    g++ -o tabellina tabellina.cpp
+    g++ tabellina.cpp -o tabellina
     if [ $? -eq 0 ]; then
         echo "Compilazione completata con successo!"
         ./tabellina

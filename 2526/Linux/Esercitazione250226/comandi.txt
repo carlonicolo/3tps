@@ -1,0 +1,12 @@
+# Lista comandi da utilizzare per l'esercitazione
+cp
+ls
+mv 
+rm fileDaRimuovere.txt
+mkdir nomeCartella
+touch pippo.txt
+head
+tail
+echo "Ciao"
+echo "Inviami sul file" >> pluto.txt
+ps

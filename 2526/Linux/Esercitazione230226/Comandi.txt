@@ -1,0 +1,24 @@
+# Comandi
+pwd  -> restituisce il path corrente
+
+ls -> Restituisce la lista dei file e delle cartelle nella posizione corrente
+
+ls /home/studente -> Restituisce la lista dei file e delle cartelle presenti nel path passato come argomento al comando ls
+
+cp
+
+sudo
+
+touch
+
+rm
+
+mv
+
+mkdir
+
+ls
+
+pwd
+
+cat

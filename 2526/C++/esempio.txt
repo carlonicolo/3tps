@@ -1,0 +1,2 @@
+Ciao! Questa è la prima riga.
+Scriviamo anche una seconda riga sul file.

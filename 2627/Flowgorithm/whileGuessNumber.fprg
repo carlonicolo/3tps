@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-29 09:21:49 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjYtMDktMjg7IjA5OjU0OjU0ICI7MzEwMg=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjYtMDktMjk7IjA5OjIxOjQ5ICI7MTA7MzI1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="magicNumber" type="Integer" array="False" size=""/>
+            <assign variable="magicNumber" expression="3"/>
+            <declare name="guessNumber" type="Integer" array="False" size=""/>
+            <output expression="&quot;Hai tre tentativi per indovinare il numero magico ! Inserisci un numero &quot;" newline="True"/>
+            <input variable="guessNumber"/>
+            <if expression="guessNumber == magicNumber">
+                <then>
+                    <output expression="&quot;Hai vinto&quot;" newline="True"/>
+                </then>
+                <else>
+                    <declare name="contatore" type="Integer" array="False" size=""/>
+                    <assign variable="contatore" expression="1"/>
+                    <while expression="guessNumber != magicNumber &amp;&amp; contatore &lt;= 2">
+                        <output expression="&quot;Indovina il numero magico ! &quot;" newline="True"/>
+                        <input variable="guessNumber"/>
+                        <assign variable="contatore" expression="contatore + 1"/>
+                    </while>
+                    <if expression="guessNumber == magicNumber">
+                        <then>
+                            <output expression="&quot;Complimenti hai vinto&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Mi dispiace hai perso !&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

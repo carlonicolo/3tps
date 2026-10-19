@@ -34,7 +34,7 @@ while(counter_tabellina <= 10):
 
 # Esercizio 4
 # Stampa la tabellina che l'utente desidera visualizzare
-print("---------")
+print("---- Esercizio 4 stampa la tabellina scelta dall'utente -----")
 tabellina = int(input("Che tabellina vuoi visualizzare? (inserisci un numero intero)"))    
 print(f'Esercizio 4 - tabellina del {tabellina}')
 counter_tabellina = 0
@@ -46,4 +46,10 @@ while(counter_tabellina <= 10):
 
 # Esercizio 5
 # Stampa i primi 10 numeri pari
+print("----- Esercizio 5 - stampa i primi 30 numeri pari ----")
+contatore_numpari = 1
+while(contatore_numpari <= 30):
+    if(contatore_numpari % 2 == 0):
+        print(contatore_numpari)
+    contatore_numpari = contatore_numpari + 1
 

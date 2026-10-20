@@ -45,11 +45,21 @@ while(counter_tabellina <= 10):
     
 
 # Esercizio 5
-# Stampa i primi 10 numeri pari
+# Stampa i primi 30 numeri pari
 print("----- Esercizio 5 - stampa i primi 30 numeri pari ----")
 contatore_numpari = 1
-while(contatore_numpari <= 30):
+while(contatore_numpari <= 60):
     if(contatore_numpari % 2 == 0):
         print(contatore_numpari)
     contatore_numpari = contatore_numpari + 1
+    
+
+# Esercizio 5
+# Stampa i primi 30 numeri dispari
+print("----- Esercizio 6 - stampa i primi 30 numeri dispari ----")
+contatore_numdispari = 1
+while(contatore_numdispari <= 60):
+    if(contatore_numdispari % 2 != 0):
+        print(contatore_numdispari)
+    contatore_numdispari = contatore_numdispari + 1
 

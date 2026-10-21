@@ -21,7 +21,17 @@ while(counter < len(lst)):
 print("-----------")
 
 # Esercizio 2
-# Visualizza solo gli elementi pari contenuti in una list
+# Visualizza solo gli elementi pari contenuti in una lista
+print("---- Esercizio 2 ----")
+print("Visualizza solo gli elementi pari contenuti in una lista")
 lst_num = [2,1,7,10,9,8]
+counter = 0
+while(counter < len(lst_num)):
+    if(lst_num[counter] % 2 == 0):
+        print(lst_num[counter])
+        counter = counter + 1
+    else:
+        counter = counter + 1
+print("-----------")
 
 

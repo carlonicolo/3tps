@@ -35,3 +35,20 @@ while(counter < len(lst_num)):
 print("-----------")
 
 
+# Esercizio 3
+# visualizza il numero degli elementi pari trovati
+# crea una lista con gli elementi pari trovati
+print("---- Esercizio 3 ----")
+print("Visualizza il numero degli elementi pari trovati")
+print("crea una lista con gli elementi pari trovati")
+lst_num = [2,1,7,10,9,8]
+counter = 0
+while(counter < len(lst_num)):
+    if(lst_num[counter] % 2 == 0):
+        print(lst_num[counter])
+        counter = counter + 1
+    else:
+        counter = counter + 1
+print("-----------")
+
+
